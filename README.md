@@ -18,7 +18,6 @@ Example
 =======
 
 ```Objective-c
-
 @interface User
 
 @property (nonatomic, retain) NSString *firstName;
@@ -28,17 +27,16 @@ Example
 
 @end
 
-
 ...
 
 NSDictionary *info = [NSDictionary withObjectsAndKeys:
                        @"Andrei", @"firstName",
-                       @"Puni", @"lastName",
+                       @"Puni", @"last_name",
                        [NSNumber numberWithInt:21], @"age",
                        nil];
                        
 User *user = [[User new] riseFrom:info];
 
-now user.firstName is @"Andrei", user.lastName is @"Puni" and user.age is @21
+// now user.firstName is @"Andrei", user.lastName is @"Puni" and user.age is @21
 
 ```
